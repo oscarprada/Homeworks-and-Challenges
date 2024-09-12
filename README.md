@@ -108,4 +108,62 @@ const numeros = [1, 2, 3, 4, 3, 2, 1];
 const ultimoTres = numeros.findLast(numero => numero === 3);
 console.log(ultimoTres); 
 
+// 13. findLastIndex(): Es una herramienta muy útil cuando se necesita encontrar el índice del último elemento en un arreglo que cumple con una determinada condición. Es decir, busca desde el final del arreglo hacia el principio e imprime en qué posición se encuentra el último elemento que cumple el criterio.
+
+const numeros = [1, 2, 3, 4, 3, 2, 1];
+
+const indiceDelUltimoTres = numeros.findLastIndex(numero => numero === 3);
+console.log(indiceDelUltimoTres); 
+
+// 14. flat(): Convierte un arreglo que contiene otros arreglos en un único arreglo unidimensional. Esto es especialmente útil cuando se trabaja con datos estructurados en múltiples niveles y se necesita obtener una representación más plana.
+
+const arrayAnidado = [1, 2, [3, 4], 5, [6, 7]];
+
+const arrayAplanado = arrayAnidado.flat();
+console.log(arrayAplanado); 
+
+// 15, flatMap(): Es una combinación de los métodos map() y flat(). Primero aplica una función a cada elemento de un arreglo y luego aplana el resultado en un nuevo arreglo. Es una forma eficiente de transformar y aplanar arreglos anidados en una sola operación.
+
+const numeros = [1, 2, 3];
+
+const numerosDobladosYConLetras = numeros.flatMap(num => [num * 2, 'x' + num]);
+console.log(numerosDobladosYConLetras); 
+
+// 16. forEach(): Itera sobre cada elemento de un arreglo y ejecuta una función específica para cada uno. En otras palabras, permite recorrer todos los elementos de un arreglo y realizar alguna acción con cada uno de ellos.
+
+const frutas = ['manzana', 'banana', 'cereza'];
+
+frutas.forEach(function(fruta) {
+  console.log(fruta);
+});
+
+// 17. includes (): Se utiliza para determinar si un arreglo contiene un elemento específico. Es una forma sencilla y directa de verificar la existencia de un valor dentro de un arreglo.
+
+const frutas = ['manzana', 'banana', 'cereza'];
+
+const existeManzana = frutas.includes('manzana');
+console.log(existeManzana); 
+
+// 18. indexOf: Se usa cuando se quiere encontrar la posición (índice) del primer elemento que coincida con un valor específico dentro de un arreglo. Es decir, te dice en qué lugar se encuentra ese elemento.
+
+const frutas = ['manzana', 'banana', 'cereza', 'manzana'];
+const indicePrimeraManzana = frutas.indexOf('manzana');
+console.log(indicePrimeraManzana);
+
+// 19. join(): se utiliza para convertir un arreglo en una cadena de texto. Toma todos los elementos del arreglo y los une en una sola cadena, utilizando un separador que el usuario puede especificar.
+
+const frutas = ['manzana', 'banana', 'cereza'];
+const cadenaDeFrutas = frutas.join('-');
+console.log(cadenaDeFrutas); 
+
+// 20. keys(): Se usa para obtener un iterador que contiene las claves de un arreglo. Este iterador te permite recorrer las claves (índices) de un arreglo de manera secuencial.
+
+const frutas = ['manzana', 'banana', 'cereza'];
+const claves = frutas.keys();
+
+for (let clave of claves) {
+  console.log(clave); // Imprimirá: 0, 1, 2
+}
+
+// 21.
 
