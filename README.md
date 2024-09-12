@@ -53,4 +53,4 @@ const miCoche = new Coche("Toyota", "Corolla");
 console.log(miCoche.marca); 
 console.log(miCoche.modelo); 
 
-// 5. 
+// 5. copyWhithin
