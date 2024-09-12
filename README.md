@@ -162,8 +162,21 @@ const frutas = ['manzana', 'banana', 'cereza'];
 const claves = frutas.keys();
 
 for (let clave of claves) {
-  console.log(clave); // Imprimirá: 0, 1, 2
+  console.log(clave); 
 }
 
-// 21.
+// 21. lastIndexOf: Permite encontrar el último índice en el que un elemento específico aparece dentro de un arreglo. A diferencia de indexOf(), que busca desde el principio, lastIndexOf() comienza la búsqueda desde el final del arreglo y retrocede.
+
+const frutas = ['manzana', 'banana', 'cereza', 'manzana'];
+
+const indiceUltimaManzana = frutas.lastIndexOf('manzana');
+console.log(indiceUltimaManzana); 
+
+// 22. length:0 : Este arreglo en JavaScript tiene como efecto principal vaciar completamente dicho arreglo. Es decir, elimina todos los elementos que contenía el arreglo, dejándolo sin ningún elemento.
+
+const frutas = ['manzana', 'banana', 'cereza'];
+console.log(frutas); // Imprime: ['manzana', 'banana', 'cereza']
+
+frutas.length = 0;
+console.log(frutas); 
 
