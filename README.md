@@ -282,6 +282,20 @@ const frutas = ['manzana', 'banana', 'cereza'];
 const cadenaFrutas = frutas.toString();
 console.log(cadenaFrutas); 
 
-// 36. 
+// 36. unshift(): agrega uno o más elementos al inicio de un arreglo. Es decir, los nuevos elementos se colocarán al principio del arreglo, desplazando todos los demás elementos hacia índices más altos.
+
+const frutas = ['manzana', 'banana'];
+
+frutas.unshift('naranja');
+console.log(frutas); // Imprimirá: ['naranja', 'manzana', 'banana']
+
+// 37. values(): Se utiliza para obtener un objeto iterador que contiene los valores de cada elemento en un arreglo. Este iterador permite recorrer los elementos del arreglo de una manera eficiente, especialmente cuando se utilizan estructuras de control como for...of.
+
+const frutas = ['manzana', 'banana', 'cereza'];
+const iteradorFrutas = frutas.values();
+
+for (let fruta of iteradorFrutas) {
+  console.log(fruta);
+}
 
 
