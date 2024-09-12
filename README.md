@@ -30,3 +30,27 @@ console.log("El segundo color es:", segundoColor);
 
 const tercerColorDesdeElFinal = colores.at(-3);
 console.log("El tercer color desde el final es:", tercerColorDesdeElFinal); 
+
+// 3. concat: combina dos o más arreglos en uno nuevo. Es decir, toma los elementos de varios arreglos y los junta en un solo arreglo más grande.
+
+const frutas = ['manzana', 'banana'];
+const verduras = ['zanahoria', 'lechuga'];
+
+const alimentos = frutas.concat(verduras);
+console.log(alimentos); 
+
+// 4. constructor: Se usa para crear objetos.Es una función especial dentro de una clase que se ejecuta automáticamente cuando se crea una nueva instancia de esa clase.
+
+class Coche {
+  constructor(marca, modelo) {
+    this.marca = marca;
+    this.modelo = modelo;
+  }
+}
+
+const miCoche = new Coche("Toyota", "Corolla");
+
+console.log(miCoche.marca); 
+console.log(miCoche.modelo); 
+
+// 5. 
