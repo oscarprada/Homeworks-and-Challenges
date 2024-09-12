@@ -53,4 +53,27 @@ const miCoche = new Coche("Toyota", "Corolla");
 console.log(miCoche.marca); 
 console.log(miCoche.modelo); 
 
-// 5. copyWhithin
+// 5. copyWhithin: Permite copiar una sección de un arreglo a otra posición dentro del mismo arreglo. Es decir, toma un segmento de elementos y los mueve a un nuevo lugar, sobrescribiendo los elementos que ya existían allí. Esto resulta útil cuando se necesita reorganizar los datos dentro de un arreglo sin crear un nuevo arreglo.
+
+const numeros = [1, 2, 3, 4, 5];
+numeros.copyWithin(1, 3); 
+console.log(numeros); 
+
+// 6. entries: Util para iterar sobre los elementos de un arreglo, proporciona tanto el índice como el valor de cada elemento en cada iteración.
+
+const colores = ['rojo', 'verde', 'azul'];
+const objetoColores = {};
+
+for (const [indice, color] of colores.entries()) {
+  objetoColores[indice] = color;
+}
+
+console.log(objetoColores); 
+
+// 7. every: Se usa cuando se necesita verificar si todos los elementos de un arreglo cumplen con una determinada condición.
+
+const numeros = [11, 15, 18, 20];
+
+const todosMayoresA10 = numeros.every(numero => numero > 10);
+
+console.log(todosMayoresA10); 
