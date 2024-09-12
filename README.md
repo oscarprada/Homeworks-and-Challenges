@@ -253,6 +253,35 @@ const frutas = ['banana', 'manzana', 'cereza'];
 frutas.sort();
 console.log(frutas); 
 
-// 33. 
+// 33. splice(): modifica el contenido de un arreglo de forma muy flexible(eliminar, agregar y reemplazar).
+
+const frutas = ['manzana', 'banana', 'cereza', 'uva'];
+
+// Eliminar el segundo elemento (índice 1)
+frutas.splice(1, 1);
+console.log(frutas); 
+
+// Insertar dos elementos a partir del índice 1
+frutas.splice(1, 0, 'pera', 'kiwi');
+console.log(frutas); 
+
+// Reemplazar el tercer elemento (índice 2)
+frutas.splice(2, 1, 'melón');
+console.log(frutas); 
+
+// 34. toLocaleString (): Se utiliza para convertir los elementos de un arreglo en una cadena de texto formateada. Esta cadena representa los elementos del arreglo de una manera legible y adecuada para la configuración regional del usuario.
+
+const numeros = [1.5, 2.3, 4];
+
+const cadenaNumeros = numeros.toLocaleString();
+console.log(cadenaNumeros); 
+
+// 35. toString(): Convierte todos los elementos de un arreglo en una única cadena de texto. Cada elemento del arreglo es separado por una coma y el resultado final es una representación textual del arreglo.
+
+const frutas = ['manzana', 'banana', 'cereza'];
+const cadenaFrutas = frutas.toString();
+console.log(cadenaFrutas); 
+
+// 36. 
 
 
