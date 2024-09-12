@@ -96,4 +96,16 @@ const numeros = [1, 2, 3, 4, 5];
 const numeroBuscado = numeros.find(numero => numero === 3);
 console.log(numeroBuscado); 
 
+// 11. findIndex ():  Útil cuando se necesita encontrar el índice del primer elemento en un arreglo que cumple con una condición específica. Es decir, en lugar de devolverte el elemento en sí, te dice en qué posición se encuentra ese elemento.
+
+const numeros = [1, 2, 3, 4, 5];
+const indiceDelTres = numeros.findIndex(numero => numero === 3);
+console.log(indiceDelTres); 
+
+// 12. findLast(): Se usa cuando se quiere encontrar el último elemento de un arreglo que cumple con una condición específica. Es decir, busca desde el final del arreglo hacia el principio, lo opuesto a find().
+
+const numeros = [1, 2, 3, 4, 3, 2, 1];
+const ultimoTres = numeros.findLast(numero => numero === 3);
+console.log(ultimoTres); 
+
 
