@@ -21,3 +21,12 @@ if (numeros.length === 0) {
 numeros.length = 3;
 console.log("Nuevo arreglo:", numeros); 
 
+// 2. at: Es como se accede a elementos dentro de un arreglo
+
+const colores = ['rojo', 'verde', 'azul', 'amarillo'];
+
+const segundoColor = colores.at(1);
+console.log("El segundo color es:", segundoColor); 
+
+const tercerColorDesdeElFinal = colores.at(-3);
+console.log("El tercer color desde el final es:", tercerColorDesdeElFinal); 
