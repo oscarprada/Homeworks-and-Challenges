@@ -219,9 +219,40 @@ console.log(cadenaInvertida); // Imprimirá: "4321"
 // 28. reverse(): Invierte el orden de los elementos de un arreglo. Es decir, el primer elemento pasa a ser el último, el segundo pasa a ser el penúltimo, y así sucesivamente.
 
 const frutas = ['manzana', 'banana', 'cereza'];
+
 frutas.reverse();
 console.log(frutas); 
 
-// 29. 
+// 29. shift: Elimina y devuelve el primer elemento de un arreglo. Es como sacar el primer elemento de una cola: lo quita y lo tiene a mano para usarlo.
+
+const frutas = ['manzana', 'banana', 'cereza'];
+const primeraFruta = frutas.shift();
+
+console.log(primeraFruta); 
+console.log(frutas);    
+
+// 30. slice: Extrae una porción de un arreglo existente y crear un nuevo arreglo con esos elementos. Es como cortar una rebanada de un pastel: obtiene una nueva pieza sin modificar el pastel original.
+
+const frutas = ['manzana', 'banana', 'cereza', 'uva'];
+const frutasCortadas = frutas.slice(1, 3);
+
+console.log(frutasCortadas); 
+console.log(frutas);      
+
+// 31. some(): Se utiliza para determinar si al menos un elemento de un arreglo cumple con una condición específica. 
+
+const numeros = [1, 2, 3, 4, 5];
+const hayPar = numeros.some(numero => numero % 2 === 0);
+
+console.log(hayPar); 
+
+// 32. sort (): Puede ordenar los elementos de un arreglo de forma ascendente o descendente. Por defecto, ordena los elementos como cadenas de texto, pero se peude personalizar el orden de clasificación proporcionando una función de comparación.
+
+const frutas = ['banana', 'manzana', 'cereza'];
+
+frutas.sort();
+console.log(frutas); 
+
+// 33. 
 
 
