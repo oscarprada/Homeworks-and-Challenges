@@ -180,3 +180,48 @@ console.log(frutas); // Imprime: ['manzana', 'banana', 'cereza']
 frutas.length = 0;
 console.log(frutas); 
 
+// 23. map(): Permite transformar cada elemento de un arreglo y crear un nuevo arreglo con los resultados de esa transformación. Es decir, aplica una función a cada elemento y devuelve un nuevo arreglo con los valores resultantes.
+
+const numeros = [1, 2, 3, 4, 5];
+const numerosDoblados = numeros.map(numero => numero * 2);
+console.log(numerosDoblados); 
+
+// 24. pop (): Sirve para eliminar y devolver el último elemento de un arreglo. Es como sacar el último elemento de una pila: lo quita y lo tiene a mano para usarlo.
+
+const frutas = ['manzana', 'banana', 'cereza'];
+const ultimaFruta = frutas.pop();
+
+console.log(ultimaFruta);  
+console.log(frutas);  
+
+// 25. push(): Agrega uno o más elementos al final de un arreglo. Es como añadir elementos al final de una lista.
+
+const frutas = ['manzana', 'banana'];
+const nuevoTamaño = frutas.push('cereza', 'uva');
+
+console.log(frutas);        
+console.log(nuevoTamaño);  
+
+// 26. reduce(): Permite iterar sobre todos los elementos de un arreglo y reducirlos a un único valor. Este valor puede ser de cualquier tipo: un número, una cadena, un objeto, o incluso otro arreglo.
+
+const numeros = [1, 2, 3, 4];
+
+const suma = numeros.reduce((acumulador, numero) => acumulador + numero, 0);
+console.log(suma); 
+
+// 27. reduceRigth (): Itera sobre el arreglo desde el último elemento hacia el primero. Esto significa que la función de reducción se aplica a los elementos en orden inverso.
+
+const numeros = [1, 2, 3, 4];
+
+const cadenaInvertida = numeros.reduceRight((acumulador, numero) => acumulador + numero, '');
+console.log(cadenaInvertida); // Imprimirá: "4321"
+
+// 28. reverse(): Invierte el orden de los elementos de un arreglo. Es decir, el primer elemento pasa a ser el último, el segundo pasa a ser el penúltimo, y así sucesivamente.
+
+const frutas = ['manzana', 'banana', 'cereza'];
+frutas.reverse();
+console.log(frutas); 
+
+// 29. 
+
+
