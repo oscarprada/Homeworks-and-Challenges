@@ -6,3 +6,27 @@
 //- Constructores: En las funciones regulares Se puede usar como constructor con new para crear instancias de objetos.En las funciones flechas: No puede ser utilizada como constructor y arrojará un error si se intenta usar con new.
 //- Call, Apply, y Bind: En las regulares las puedes usar para cambiar el valor de un this explicitamente. En las flechas no se pueden usar porque es this es heredado
 // En resumen, las funciones flecha son ideales para callbacks y funciones de corta extensión debido a su sintaxis concisa y manejo predecible de this. Por otro lado, las funciones regulares ofrecen mayor flexibilidad, siendo más adecuadas cuando se requiere un control dinámico de this o acceso al objeto arguments.
+
+//Create a new function in Regular and Arrow types, which should receive a number and will print in console if that number is either odd or even
+
+// Función regular
+function isEvenRegular(number) {
+  if (number % 2 === 0) {
+    console.log("El número " + number + " es par.");
+  } else {
+    console.log("El número " + number + " es impar.");
+  }
+}
+
+// Función de flecha
+const isEvenArrow = (number) => {
+  if (number % 2 === 0) {
+    console.log("El número " + number + " es par.");
+  } else {
+    console.log("El número " + number + " es impar.");
+  }
+};
+
+// Usando las funciones
+isEvenRegular(5); // Imprime "El número 5 es impar."
+isEvenArrow(6); // Imprime "El número 6 es par."
