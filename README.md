@@ -1,56 +1,34 @@
-# Homeworks-and-Challenges
-Estructura de datos II
+//LA DIFERENCIA ENTRE LAS FUNCIONES REGULARES Y LAS FUNCIONES FLECHA
+•	 Las funciones flechas son la alternativa reducida de una función normal, no se pueden usar como métodos, tampoco se pueden usar como constructores.
+Principales diferencias: 
+-	Sintaxis: En la función regular se define con la palabra function y en las Flecha se usa =>
+-	El this: En la función regular El valor de this depende de cómo se llama a la función. Si se llama desde un objeto, this hace referencia a ese objeto. En la función Flecha No tiene su propio this, sino que hereda el this del contexto donde fue definida.
+-	En los Argumentos: En la función regular Puede acceder al objeto especial arguments, que es un array-like con todos los argumentos pasados a la función. en las funciones flechas; No tiene su propio objeto arguments. Si intentas acceder a arguments, lo tomará del contexto externo, si existe.
+-	Constructores: En las funciones regulares Se puede usar como constructor con new para crear instancias de objetos. En las funciones flechas: No puede ser utilizada como constructor y arrojará un error si se intenta usar con new.
+-	Call, Apply, y Bind: En las regulares las puedes usar para cambiar el valor de un this explícitamente. En las flechas no se pueden usar porque es this es heredado
+En resumen, las funciones flecha son ideales para callbacks y funciones de corta extensión debido a su sintaxis concisa y manejo predecible de this. Por otro lado, las funciones regulares ofrecen mayor flexibilidad, siendo más adecuadas cuando se requiere un control dinámico de this o acceso al objeto arguments.//
 
-//1.	Array Length: Es una propiedad que te indica la cantidad de elementos que hay en un arreglo. 
 
-const numeros = [10, 25, 5, 30, 15];
+//Create a new function in Regular and Arrow types, which should receive a number and will print in console if that number is either odd or even
 
-const longitud = numeros.length;
-console.log("La longitud del arreglo es:", longitud); 
-
-for (let i = 0; i < numeros.length; i++) {
-  console.log("Elemento en la posición", i, ":", numeros[i]);
-}
-
-if (numeros.length === 0) {
-  console.log("El arreglo está vacío");
-} else {
-  console.log("El arreglo tiene elementos");
-}
-
-numeros.length = 3;
-console.log("Nuevo arreglo:", numeros); 
-
-// 2. at: Es como se accede a elementos dentro de un arreglo
-
-const colores = ['rojo', 'verde', 'azul', 'amarillo'];
-
-const segundoColor = colores.at(1);
-console.log("El segundo color es:", segundoColor); 
-
-const tercerColorDesdeElFinal = colores.at(-3);
-console.log("El tercer color desde el final es:", tercerColorDesdeElFinal); 
-
-// 3. concat: combina dos o más arreglos en uno nuevo. Es decir, toma los elementos de varios arreglos y los junta en un solo arreglo más grande.
-
-const frutas = ['manzana', 'banana'];
-const verduras = ['zanahoria', 'lechuga'];
-
-const alimentos = frutas.concat(verduras);
-console.log(alimentos); 
-
-// 4. constructor: Se usa para crear objetos.Es una función especial dentro de una clase que se ejecuta automáticamente cuando se crea una nueva instancia de esa clase.
-
-class Coche {
-  constructor(marca, modelo) {
-    this.marca = marca;
-    this.modelo = modelo;
+// Función regular
+function isEvenRegular(number) {
+  if (number % 2 === 0) {
+    console.log("El número " + number + " es par.");
+  } else {
+    console.log("El número " + number + " es impar.");
   }
 }
 
-const miCoche = new Coche("Toyota", "Corolla");
+// Función de flecha
+const isEvenArrow = (number) => {
+  if (number % 2 === 0) {
+    console.log("El número " + number + " es par.");
+  } else {
+    console.log("El número " + number + " es impar.");
+  }
+};
 
-console.log(miCoche.marca); 
-console.log(miCoche.modelo); 
-
-// 5. 
+// Usando las funciones
+isEvenRegular(5); // Imprime "El número 5 es impar."
+isEvenArrow(6); // Imprime "El número 6 es par."
