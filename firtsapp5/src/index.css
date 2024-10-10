@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* Estilos para la página Home */
+.home-container {
+  background-color: #097add; /* Un fondo azul claro */
+  padding: 20px;
+  text-align: center; /* Centra el texto */
+}
+
+.home-container h1 {
+  color: #2c3e50; /* Un color de texto oscuro */
+  font-size: 2.5rem; /* Tamaño del texto del título */
+}
+
+.home-container p {
+  font-size: 2.5rem; /* Tamaño de texto para el párrafo */
+  color: #2c3e50; /* Un gris suave para el texto del párrafo */
+}
+
+
+/* Estilos para la página Profile */
+.profile-container {
+  background-color: #6b0b0b; /* Un fondo azul claro */
+  padding: 20px;
+  text-align: center; /* Centra el texto */
+}
+
+.profile-container h1 {
+  color: #0b0c0b; /* Un color de texto oscuro */
+  font-size: 2.5rem; /* Tamaño del texto del título */
+}
+
+.profile-container p {
+  font-size: 2.5rem; /* Tamaño de texto para el párrafo */
+  color: #0b0c0c; /* Un gris suave para el texto del párrafo */
+}
+
+
+/* Estilos para la página Dashboard */
+.dashboard-container {
+  background-color: #048d44; /* Un fondo azul claro */
+  padding: 20px;
+  text-align: center; /* Centra el texto */
+}
+
+.dashboard-container h1 {
+  color: #0b0c0b; /* Un color de texto oscuro */
+  font-size: 2.5rem; /* Tamaño del texto del título */
+}
+
+.dashboard-container p {
+  font-size: 2.5rem; /* Tamaño de texto para el párrafo */
+  color: #0b0c0c; /* Un gris suave para el texto del párrafo */
+}
