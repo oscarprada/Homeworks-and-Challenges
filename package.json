@@ -1,0 +1,11 @@
+{
+  "name": "arbol-genealogico",
+  "version": "1.0.0",
+  "description": "Proyecto para manejar un árbol genealógico utilizando estructuras de datos.",
+  "main": "familyTree.js",
+  "scripts": {
+    "start": "node familyTree.js"
+  },
+  "author": "Tu Nombre",
+  "license": "MIT"
+}

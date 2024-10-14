@@ -1,56 +1,21 @@
-# Homeworks-and-Challenges
-Estructura de datos II
+# Proyecto de Árbol Genealógico
 
-//1.	Array Length: Es una propiedad que te indica la cantidad de elementos que hay en un arreglo. 
+Este proyecto utiliza una estructura de datos para manejar información sobre un árbol genealógico, donde cada persona puede tener varios hijos y cada persona es descendiente de solo una persona.
 
-const numeros = [10, 25, 5, 30, 15];
+## Estructura de Datos
 
-const longitud = numeros.length;
-console.log("La longitud del arreglo es:", longitud); 
+- **Clase `Person`:** 
+  - Representa a una persona en el árbol genealógico.
+  - Contiene propiedades para el nombre, los hijos y el padre.
+  - Métodos:
+    - `addChild(child)`: Agrega un hijo a la persona y establece el padre.
+    - `getFamily()`: Devuelve un objeto con el nombre de la persona y los nombres de sus hijos.
 
-for (let i = 0; i < numeros.length; i++) {
-  console.log("Elemento en la posición", i, ":", numeros[i]);
-}
+## Cómo Usar
 
-if (numeros.length === 0) {
-  console.log("El arreglo está vacío");
-} else {
-  console.log("El arreglo tiene elementos");
-}
-
-numeros.length = 3;
-console.log("Nuevo arreglo:", numeros); 
-
-// 2. at: Es como se accede a elementos dentro de un arreglo
-
-const colores = ['rojo', 'verde', 'azul', 'amarillo'];
-
-const segundoColor = colores.at(1);
-console.log("El segundo color es:", segundoColor); 
-
-const tercerColorDesdeElFinal = colores.at(-3);
-console.log("El tercer color desde el final es:", tercerColorDesdeElFinal); 
-
-// 3. concat: combina dos o más arreglos en uno nuevo. Es decir, toma los elementos de varios arreglos y los junta en un solo arreglo más grande.
-
-const frutas = ['manzana', 'banana'];
-const verduras = ['zanahoria', 'lechuga'];
-
-const alimentos = frutas.concat(verduras);
-console.log(alimentos); 
-
-// 4. constructor: Se usa para crear objetos.Es una función especial dentro de una clase que se ejecuta automáticamente cuando se crea una nueva instancia de esa clase.
-
-class Coche {
-  constructor(marca, modelo) {
-    this.marca = marca;
-    this.modelo = modelo;
-  }
-}
-
-const miCoche = new Coche("Toyota", "Corolla");
-
-console.log(miCoche.marca); 
-console.log(miCoche.modelo); 
-
-// 5. 
+1. Clona o descarga este repositorio.
+2. Asegúrate de tener [Node.js](https://nodejs.org/) instalado en tu máquina.
+3. Navega a la carpeta del proyecto en la terminal.
+4. Ejecuta el archivo `familyTree.js` con el siguiente comando:
+   ```bash
+   node familyTree.js
